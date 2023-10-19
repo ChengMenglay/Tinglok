@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanuman:wght@100;400&family=Roboto:wght@100;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.box-logo img {
+    width: 100px;
+    margin: 8px 40px;
+}
+
+.input-group {
+    margin-top: 8px;
+}
+
+.nav-btn {
+    margin-top: 8px;
+    margin-left: 15px;
+}
+
+.bar {
+    display: none;
+}
+
+.phone-buttom {
+    display: none;
+}
+
+.footer-text {
+    text-align: center;
+}
+
+.list-group-item-action {
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.main-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-list a {
+    color: black;
+    text-decoration: none;
+}
+
+.category a {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+.category .a-1{
+    padding: 17px;
+}
+.category .a-1:hover {
+    color: #00af50;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.line-1 {
+    position: relative;
+    margin-top: 10px;
+}
+
+.line-1::before {
+    content: "";
+    position: absolute;
+    width: 77%;
+    height: 5px;
+    top: 11px;
+    left: 22%;
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+.box {
+    height: 300px;
+    display: flex;
+    position: relative;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: .3s;
+}
+.box:hover{
+    transition: .3s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: #333;
+}
+.box img {
+    width: 100%;
+    height: 65%;
+    object-fit: cover;
+}
+.a-box-product{
+    color: #333;
+}
+
+.box .price {
+    position: absolute;
+    bottom: 8px;
+    right: 20px;
+}
+
+.box .name-product {
+    position: absolute;
+    top: 68%;
+    left: 10px;
+    font-family: 'Hanuman';
+}
+.box-1{
+    width: 100%;
+    height: 250px;
+    margin-top: 10px;
+}
+.box-1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.location{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.location ul{
+    list-style: none;
+}
+.location  a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #333;
+    line-height: 3;
+}
+.location a:hover{
+    opacity: .5;
+    color: red;
+}
+.box-footer{
+    color:#ccc;
+    padding: 10px 15px;
+}
+.box-footer a{
+    text-decoration: none;
+    color: #ccc;
+    display: block;
+    line-height: 2;
+    font-size: 13px;
+}
+.box-footer a:hover{
+    opacity: 1;
+    color: white;
+}
+.box-footer i{
+    font-size: 11px;
+}
+.box-footer ul{
+    list-style: none;
+}
+.copy-right{
+    font-size: 13px;
+    opacity: 1;
+    color: #ccc;
+    text-align: center;
+}
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width:300px) and (max-width:767px) {
+    .box-logo img {
+        width: 70px;
+        margin-top: 10px;
+        margin-left: 0;
+        display: block;
+        justify-content: start;
+    }
+
+    .input-group {
+        width: 100%;
+        margin: auto;
+    }
+
+    .buttom-box {
+        display: none;
+    }
+
+    .bar {
+        font-size: 30px;
+        display: block;
+    }
+
+    .phone-buttom {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    .category {
+        display: none;
+    }
+
+    .line-1::before {
+        width: 95%;
+        top: 30px;
+        left: 15px;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width:991px) {
+    .box-logo img {
+        width: 100px;
+        margin: 10px 0;
+        display: block;
+    }
+
+    .input-group {
+        width: 80%;
+        margin: auto;
+    }
+
+    .buttom-box {
+        display: none;
+    }
+
+    .bar {
+        font-size: 30px;
+        display: block;
+    }
+
+    .phone-buttom {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    .category {
+        display: none;
+    }
+
+    .line-1::before {
+        width: 96%;
+        top: 30px;
+        left: 15px;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width:1199px) {
+    .category .a-1{
+        padding: 8.8px;
+    }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width:1400px) {
+    .box-logo img {
+        width: 100px;
+        margin: 10px 0;
+        display: block;
+    }
+    .input-group {
+        padding: 10px 0;
+        width: 100%;
+        margin: auto;
+    }
+    .buttom-box {
+        display: block; 
+    }
+    .category .a-1{
+        padding: 13px;
+    }
+}
